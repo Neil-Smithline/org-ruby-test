@@ -1,6 +1,6 @@
 * My org-ruby gem testfile
 
-abc =code= *bold* +strikethrough+ /italic/ _underlined_ ~verbatim<b>bold</b>~
+abc =code= *bold* +strikethrough+ /italic/ _underlined_ ~<b>bold</b>~
 
 an <http://example.com> link in pointy brackets
 
@@ -9,6 +9,8 @@ another http://example.com link but not in pointy brackets
 * More test
 
 abc 
-#+HTML : <code>code</code> <b>bold</b> <del>strikethrough</del> <em>italic</em> <span style="text-decoration:underline;">underlined</span> ~verbatim&lt;b&gt;bold&lt;/b&gt;~</p>
+#+HTML: <code>code</code> <b>bold</b> <del>strikethrough</del> <em>italic</em> <span style="text-decoration:underline;">underlined</span> <code>&lt;b&gt;bold&lt;/b&gt;</code>
+
+def
 
 
