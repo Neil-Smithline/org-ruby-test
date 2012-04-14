@@ -1,16 +1,24 @@
-* My org-ruby gem testfile
+* Using org formatting
 
-abc =code= *bold* +strikethrough+ /italic/ _underlined_ ~<b>bold</b>~
+abc =code= *bold* +strikethrough+ /italic/
+ _underlined_ ~<b>code</b>~
+def
 
-an <http://example.com> link in pointy brackets
-
-another http://example.com link but not in pointy brackets
-
-* More test
+* Using HTML formatting
 
 abc 
-#+HTML: <code>code</code> <b>bold</b> <del>strikethrough</del> <em>italic</em> <span style="text-decoration:underline;">underlined</span> <code>&lt;b&gt;bold&lt;/b&gt;</code>
+#+HTML: <code>code</code> <b>bold</b> <del>strikethrough</del> <em>italic</em> 
+#+HTML: <span style="text-decoration:underline;">underlined</span>
+#+HTML: <code>&lt;b&gt;code&lt;/b&gt;</code>
+def
 
+
+
+
+* No formatting, should be escaped
+
+abc 
+<code>code</code> <b>bold</b> <del>strikethrough</del> <em>italic</em> <span style="text-decoration:underline;">underlined</span> <code><b>code</b>
 def
 
 

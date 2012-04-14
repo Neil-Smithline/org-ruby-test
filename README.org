@@ -1,0 +1,4 @@
+* Local File Links Test
+In Org Mode, you can link to a file in the same directory via =./myfile=. But this appears broken in the org-ruby gem. 
+
+[[plain-file.txt][This]] should be a link to the file plain-file.txt in this repository. It seems to work as long as the =.org= file is not =README.org=. Very strange.
